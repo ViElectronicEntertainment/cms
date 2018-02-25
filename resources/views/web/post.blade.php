@@ -8,14 +8,16 @@
 				<img src="{{ $post->file }}" class="card-img-top">
 			@endif
 			<div class="card-body">
-				<h5 class="card-title">Categoria: {{$post->category->name}} </h5>
+				<h5>Categoria: <a href="{{route('category', $post->category->slug)}}" class="card-title">
+					{{$post->category->name}}
+				</a></h5>
 				<div class="card-text">	{{ $post->excerpt }}
 					<hr>
 					{{!! $post->body !!}}
 					<hr>
 					Etiquetas
 					@foreach($post->tags as $tag)
-					<a href="#">{{$tag->name}}</a> - 
+					<a href="{{route('tag', $tag->slug)}}">{{$tag->name}}</a> - 
 					@endforeach
 				</div>			
 			</div>
