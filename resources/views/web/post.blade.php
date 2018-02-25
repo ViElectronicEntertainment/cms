@@ -2,21 +2,24 @@
 @section('content')
 <div class="container-fluid">
 	<div class="container">
-		<h1>Lista de Articulos</h1>
-		@foreach($posts as $post)
+		<h1>{{$post->name}}</h1>
 		<div class="card">
 			@if($post->file)
 				<img src="{{ $post->file }}" class="card-img-top">
 			@endif
 			<div class="card-body">
-				<h5 class="card-title"> {{$post->name}} </h5>
+				<h5 class="card-title">Categoria: {{$post->category->name}} </h5>
 				<div class="card-text">	{{ $post->excerpt }}
-					<a href="{{ route('post', $post->slug) }}" class="btn btn-primary">Leer Más</a>
-				</div>				
+					<hr>
+					{{!! $post->body !!}}
+					<hr>
+					Etiquetas
+					@foreach($post->tags as $tag)
+					<a href="#">{{$tag->name}}</a> - 
+					@endforeach
+				</div>			
 			</div>
 		</div>
-		@endforeach
-		{{$posts->render()}}
 	</div>
 </div>
 @endsection
