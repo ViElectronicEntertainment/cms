@@ -14,7 +14,7 @@
 									<tr>
 										<th scope="col">ID</th>
 										<th scope="col">Nombre</th>
-										<th scope="col">Acciones</th>
+										<th scope="col">&nbsp;</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -22,16 +22,17 @@
 									<tr>
 										<th scope="row">{{ $tag->id}} </th>
 										<td>{{ $tag->name }}</td>
-										<td>
-											<a class="btn btn-primary" href="{{ route('tags.show', $tag->id) }}">Ver</a>
-										</td>
-										<td>
-											<a class="btn btn-secondary" href="{{ route('tags.edit', $tag->id) }}">Editar</a>
-										</td>
-										<td>
-											{!! Form::open(['route' => ['tags.destroy', $tag->id], 'method' => 'DELETE']) !!}
-												<button class="btn btn-danger">Eliminar</button>
-											{!! Form::close() !!}
+										<td align="right">
+											<div class="btn-group">
+												<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Acciones</button>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a href="{{ route('tags.show', $tag->id) }}" class="dropdown-item">Ver</a>
+													<a href="{{ route('tags.edit', $tag->id) }}" class="dropdown-item">Editar</a>
+													{!! Form::open(['route' => ['tags.destroy', $tag->id], 'method' => 'DELETE']) !!}
+													<button href="{{ route('tags.show', $tag->id) }}" class="dropdown-item">Eliminar</button>
+													{!! Form::close() !!}
+												</div>
+											</div>
 										</td>
 									</tr>
 									@endforeach
