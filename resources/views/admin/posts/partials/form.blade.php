@@ -50,6 +50,7 @@
 @section('scripts')
 <script src="{{ asset('js/jquery.stringtoslug.min.js') }}"></script>
 <script src="{{ asset('../node_modules/speakingurl/speakingurl.min.js') }}"></script>
+<script src="{{ asset('../node_modules/ckeditor/ckeditor.js') }}"></script>
 <script>
 	$(document).ready(function(){
 		$("#name, #slug").stringToSlug({
@@ -58,5 +59,6 @@
 			}
 		});
 	});
+	CKEDITOR.replace('body');
 </script>
 @endsection
