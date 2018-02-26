@@ -8,7 +8,7 @@
 						<h5 class="card-title">Editar Entrada</h5>
 						<div class="card-text">
 							{!! Form::model($post, ['route' =>['posts.update',$post->id],
-							'method' => 'PUT']) !!}
+							'method' => 'PUT', 'files' => true]) !!}
 								@include('admin.posts.partials.form')
 							{!! Form::close() !!}
 						</div>
