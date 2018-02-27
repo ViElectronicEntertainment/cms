@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace pami;
 
 use Illuminate\Database\Eloquent\Model;
 

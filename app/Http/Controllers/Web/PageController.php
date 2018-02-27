@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Web;
+namespace pami\Http\Controllers\Web;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use App\Post;
-use App\Category;
+use pami\Http\Controllers\Controller;
+use pami\Post;
+use pami\Category;
 
 class PageController extends Controller
 {

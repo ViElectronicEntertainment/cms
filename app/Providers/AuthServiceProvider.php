@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Providers;
-use App\Post;
-use App\Policies\PostPolicy;
+namespace pami\Providers;
+use pami\Post;
+use pami\Policies\PostPolicy;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 

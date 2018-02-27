@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace pami\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\TagStoreRequest;
-use App\Http\Requests\TagUpdateRequest;
-use App\Tag;
+use pami\Http\Controllers\Controller;
+use pami\Http\Requests\TagStoreRequest;
+use pami\Http\Requests\TagUpdateRequest;
+use pami\Tag;
 
 class TagController extends Controller
 {

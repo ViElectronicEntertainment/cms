@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace pami\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\PostStoreRequest;
-use App\Http\Requests\PostUpdateRequest;
-use App\Post;
-use App\Category;
-use App\Tag;
+use pami\Http\Controllers\Controller;
+use pami\Http\Requests\PostStoreRequest;
+use pami\Http\Requests\PostUpdateRequest;
+use pami\Post;
+use pami\Category;
+use pami\Tag;
 
 class PostController extends Controller
 {

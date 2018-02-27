@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace pami\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\CategoryStoreRequest;
-use App\Http\Requests\CategoryUpdateRequest;
-use App\Category;
+use pami\Http\Controllers\Controller;
+use pami\Http\Requests\CategoryStoreRequest;
+use pami\Http\Requests\CategoryUpdateRequest;
+use pami\Category;
 
 class CategoryController extends Controller
 {

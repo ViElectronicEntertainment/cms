@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Policies;
+namespace pami\Policies;
 
-use App\User;
-use App\Post;
+use pami\User;
+use pami\Post;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class PostPolicy
