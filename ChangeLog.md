@@ -20,7 +20,7 @@
 		╔══════════════════════════════════════╗
 		║   Ultimos Cambios - Change Log       ║
 		╚══════════════════════════════════════╝
-		Ultima Actualizacion:  	2017-12-9
+		Ultima Actualizacion:  	2018-19-3
 					▀▀▀▀▀▀▀▀▀▀			
 
 Todos los cambios notables de este proyecto estan documentadas en este archivo.
@@ -35,6 +35,16 @@ Todos los cambios notables de este proyecto estan documentadas en este archivo.
 ### Update
 ### Optimization
 ### Fixed
+
+--
+
+## [0.0.2.0] - 2018-03-19
+
+### Optimization
+-- Se han optimizado tiempos de carga
+
+### Fixed
+-- Se Corrigio problemas del tema con Bootstrap
 
 --
 
